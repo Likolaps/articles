@@ -1,0 +1,64 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "image": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png",
+      "titre": "Essence Mascara Lash Princess",
+      "price": 9.95
+    },
+    {
+      "id": 2,
+      "image": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
+      "titre": "Eyeshadow Palette with Mirror",
+      "price": 19.95
+    },
+    {
+      "id": 3,
+      "image": "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png",
+      "titre": "Powder Canister",
+      "price": 14.99
+    },
+    {
+      "id": 4,
+      "image": "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png",
+      "titre": "Red Lipstick",
+      "price": 12.95
+    },
+    {
+      "id": 5,
+      "titre": "Red Nail Polish",
+      "price": 8.99,
+      "image": "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/1.png"
+    },
+    {
+      "id": 6,
+      "titre": "Calvin Klein CK One",
+      "price": 49.99,
+      "image": "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/1.png"
+    },
+    {
+      "id": 8,
+      "titre": "Dior J'adore",
+      "price": 89.99,
+      "image": "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/1.png"
+    },
+    {
+      "id": 9,
+      "titre": "Dolce Shine Eau de",
+      "price": 69.99,
+      "image": "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/1.png"
+    },
+    {
+      "id": 10,
+      "titre": "Gucci Bloom Eau de",
+      "price": 79.99,
+      "image": "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/1.png"
+    },
+    {
+      "id": 11,
+      "titre": "Annibale Colombo Bed",
+      "price": 1899.99,
+      "image": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/1.png"
+    }
+ ]
+}

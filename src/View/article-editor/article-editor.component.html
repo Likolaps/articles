@@ -1,0 +1,31 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+  <label>
+    Titre :
+    <input
+      [class.invalid]="isInvalid('titre')"
+      type="text"
+      formControlName="titre"
+    />
+    @if(hasError('titre','required')) {
+    <p>Titre requis</p>
+    }
+  </label>
+  <label>
+    Image :
+    <input type="text" formControlName="image" />
+  </label>
+  <label>
+    Prix :
+    <textarea
+      [class.invalid]="isInvalid('price')"
+      formControlName="price"
+    ></textarea>
+    @if(hasError('price','required')) {
+    <p>Prix requis</p>
+    }
+  </label>
+  <ul class="actions">
+    <li><button class="button" type="submit">Send</button></li>
+    <li><button class="button" type="reset">Reset</button></li>
+  </ul>
+</form>

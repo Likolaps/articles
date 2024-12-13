@@ -1,0 +1,55 @@
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg h-full">
+  <table
+    class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 h-full"
+  >
+    <thead
+      class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+    >
+      <tr>
+        <th scope="col" class="px-6 py-3 w-3/12">Product name</th>
+        <th scope="col" class="px-6 py-3 w-4/12">Source</th>
+        <th scope="col" class="px-6 py-3 w-1/12">Rate</th>
+        <th scope="col" class="px-6 py-3 w-2/12">Price</th>
+        <th scope="col" class="px-6 py-3 text-center w-2/12">
+          <a routerLink="0">Nouveau Produit</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody class="overflow-y-auto">
+      @for (article of articles | async; track $index; let last = $last) {
+      <tr
+        [class]="{ 'border-b dark:border-gray-700': !last }"
+        class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600"
+      >
+        <th
+          scope="row"
+          class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white w-3/12"
+        >
+          {{ article.titre }}
+        </th>
+        <td class="px-6 py-4 w-4/12">
+          {{ article.image }}
+        </td>
+        <td class="px-6 py-4 w-2/12">
+          {{ article.price }}
+        </td>
+        <td class="px-6 py-4 w-2/12">
+          <div class="flex justify-evenly">
+            <a
+              routerLink="{{ article.id }}"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              >Edit</a
+            >
+            <button
+              (click)="delete(article.id)"
+              class="font-medium text-red-600 dark:text-red-500 hover:underline"
+            >
+              Delete
+            </button>
+          </div>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
